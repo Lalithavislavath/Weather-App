@@ -8,6 +8,7 @@ function Weather() {
   const [weatherData, setWeatherData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
  
   const fetchWeather = () => {
     if (!city) {
@@ -52,7 +53,7 @@ function Weather() {
           value={city}
           onChange={(e) => setCity(e.target.value)}
         />
-        <button onClick={fetchWeather}>Get Weather</button>
+        <button onClick={fetchWeather}>Get Weather Report</button>
       </div>
       {loading && <p className="loading">Loading...</p>}
       {error && <p className="error">{error}</p>}
