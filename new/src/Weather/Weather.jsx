@@ -11,7 +11,7 @@ function Weather() {
  
   const fetchWeather = () => {
     if (!city) {
-      setError("Please enter a city name.");
+      setError("Please enter a city or town.");
       return;
     }
  
